@@ -60,7 +60,7 @@ body{
 
 .navbar-red{
 
-  background-color: rgb(27, 27, 226);
+  background-color: rgb(39, 39, 126);
   color: #fff;
 
 }
@@ -68,4 +68,8 @@ body{
 .all-show{
 
   z-index: 10;
+}
+
+.logo{
+  width: 70px;
 }
