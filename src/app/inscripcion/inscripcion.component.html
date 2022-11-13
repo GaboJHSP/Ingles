@@ -1,1 +1,60 @@
-<p>inscripcion works!</p>
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <h3 class="heading mb-4">Contactanos para inscribirte a nuestros cursos</h3>
+                        <p>O tambien comunicate con nosotros a travez de los números telefonicos y correos electronicos que se encuentran en la parte inferior de la pagina</p>
+                        <p><img src="./assets/undraw-contact.svg" alt="Image" class="img-fluid"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <br><br><br>
+                        <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Nombre Completo">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Correo Electronico">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Razón">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Comentario Adicional"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row justify-content-center text-center">
+                                <div class="col-12">
+                                    <input type="submit" value="Enviar" class="btn btn-primary rounded-0 py-2 px-4">
+                                    <span class="submitting"></span>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="form-message-warning mt-4"></div>
+                        <div id="form-message-success">
+                        Your message was sent, thank you!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7693983fa995c844","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.0","si":100}' crossorigin="anonymous"></script>
