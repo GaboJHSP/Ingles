@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { NavmenuComponent } from './navmenu/navmenu.component';
 import { IndexComponent } from './index/index.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,6 +17,11 @@ import { LogestComponent } from './logest/logest.component';
 import { LogprofComponent } from './logprof/logprof.component';
 import { LibrosComponent } from './libros/libros.component';
 import { AglibrosComponent } from './aglibros/aglibros.component';
+import { AgregarComponent } from './agregar/agregar.component';
+import { EditarComponent } from './editar/editar.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,11 +38,16 @@ import { AglibrosComponent } from './aglibros/aglibros.component';
     LogestComponent,
     LogprofComponent,
     LibrosComponent,
-    AglibrosComponent
+    AglibrosComponent,
+    AgregarComponent,
+    EditarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

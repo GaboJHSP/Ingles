@@ -1,1 +1,43 @@
-<p>libros works!</p>
+<body data-spy="scroll" data-target="#navbar" data-offset="57">     
+    <div class="container">
+        <div>
+            <br>
+            <h2 style="text-align:center">LIBRERIA VIRTUAL EIE</h2>
+        </div>
+        <br>
+        <div class="card">
+          <div class="card-header">
+              Lista de Documentos
+          </div>
+          <div class="card-body">
+              <div class="table-responsive">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th scope="col">ID</th>
+                              <th scope="col">Nombre</th>
+                              <th scope="col">Fecha</th>
+                              <th scope="col">Precio</th>
+                              <th scope="col">Disponibles</th>
+                              <th scope="col">Acciones</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr *ngFor="let libro of Libros;let iControl=index">
+                              <td>{{ libro.id }}</td>
+                              <td>{{ libro.titulo }}</td>
+                              <td>{{ libro.fecha }}</td>
+                              <td>{{ libro.costo }} Bs.</td>
+                              <td>{{ libro.disponibles }}</td>
+                              <td><a class="btn btn-info" routerLink="/editar/{{ libro.id }}">Reservar</a>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+    </div>
+    <br>
+  </body>
+

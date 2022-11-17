@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CrudService } from '../servicio/crud.service';
 
 @Component({
   selector: 'app-libros',
@@ -6,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./libros.component.css']
 })
 export class LibrosComponent implements OnInit {
+  Libros:any;
 
-  constructor() { }
+  constructor(
+    private crudService:CrudService
+  ) {
+    this.crudService.ObtenerLibros().subscribe(respuesta=>{
+      this.Libros=respuesta;
+    })
+   }
 
   ngOnInit(): void {
   }

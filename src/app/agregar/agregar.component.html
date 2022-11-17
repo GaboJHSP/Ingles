@@ -1,0 +1,60 @@
+<body data-spy="scroll" data-target="#navbar" data-offset="57">     
+    <div class="container">
+        <div>
+            <br>
+            <h2 style="text-align:center">LIBRERIA VIRTUAL EIE</h2>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header">
+                    Agregar Contenido
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <form ngNativeValidate [formGroup]="formularioLibros" (ngSubmit)="enviarDatos()">
+                          <div class="col-md-12">
+                            <label for="titulo" class="form-label">Titulo</label>
+                            <input required type="text"
+                              class="form-control" name="titulo" id="titulo" aria-describedby="helpId" formControlName="titulo" placeholder="Ingresar nombre">
+                          </div>
+      
+                          <div class="col-md-12">
+                            <label for="date" class="form-label">Fecha</label>
+                            <input required type="date"
+                              class="form-control" name="date" id="date" aria-describedby="helpId" formControlName="date" placeholder="Ingresar fecha">
+                          </div>
+      
+                          <div class="col-md-12">
+                            <label for="costo" class="form-label">Costo</label>
+                            <input required type="text"
+                              class="form-control" name="costo" id="costo" aria-describedby="helpId" formControlName="costo" placeholder="Ingresar costo">
+                          </div>
+      
+                          <div class="col-md-12">
+                            <label for="disponibles" class="form-label">Disponibles</label>
+                            <input required type="text"
+                              class="form-control" name="disponibles" id="disponibles" aria-describedby="helpId" formControlName="disponibles" placeholder="Ingresar cantidad disponible">
+                          </div>
+      
+                          <div class="btn-group text-center  mt-4 pt-2" role="group" aria-l="">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="submit" class="btn btn-success">Agregar</button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" routerLink="/lista" routerLinkActive="active-link" class="btn btn-primary">Cancelar</button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+  </body>
