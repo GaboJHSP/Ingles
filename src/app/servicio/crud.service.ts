@@ -4,6 +4,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Libro } from './Libro'
 import { Inscripcion } from './Inscripcion';
+import { Loginest } from './Loginest';
+import { Loginprof } from './LoginProf';
 
 @Injectable({
   providedIn: 'root'
@@ -35,5 +37,17 @@ export class CrudService {
 
   AgregarInscripcion(datosIncripcion:Inscripcion):Observable<any>{
     return this.clientHttp.post(this.API+"?inscripcion=1",datosIncripcion);
+  }
+
+  IniciarSesion(datosIncripcion:Loginest):Observable<any>{
+    return this.clientHttp.post(this.API+"?loginest=1",datosIncripcion);
+  }
+
+  Reservar(id:any):Observable<any>{
+    return this.clientHttp.get(this.API+"?reservar="+id,id);
+  }
+
+  InicioSesion(datosIncripcion:Loginprof):Observable<any>{
+    return this.clientHttp.post(this.API+"?loginprof=1",datosIncripcion);
   }
 }

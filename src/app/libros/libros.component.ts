@@ -20,4 +20,12 @@ export class LibrosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  Reservar (id:any,iControl:any) {
+    if(window.confirm("Desea reservar este producto?")){
+    this.crudService.Reservar(id).subscribe((respuesta)=>{
+      alert("Su reserva ya fue procesada");
+    });
+    }
+  }
+
 }

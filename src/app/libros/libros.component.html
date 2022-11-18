@@ -29,7 +29,7 @@
                               <td>{{ libro.fecha }}</td>
                               <td>{{ libro.costo }} Bs.</td>
                               <td>{{ libro.disponibles }}</td>
-                              <td><a class="btn btn-info" routerLink="/editar/{{ libro.id }}">Reservar</a>
+                              <td><a class="btn btn-info" (click)="Reservar(libro.id,iControl)">Reservar</a>
                               </td>
                           </tr>
                       </tbody>

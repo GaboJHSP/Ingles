@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'lista', component: AglibrosComponent },
   { path: 'agregar', component: AgregarComponent },
   { path: 'editar/:id', component: EditarComponent },
-  { path: 'contenido', component: LibrosComponent }
+  { path: 'contenido/:id', component: LibrosComponent }
 ];
 
 @NgModule({
